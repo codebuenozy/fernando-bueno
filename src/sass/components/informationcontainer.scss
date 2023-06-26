@@ -19,6 +19,11 @@
     margin-bottom: .8rem;
     border-bottom: 1px solid variables.$border-color;
     width: 100%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+    transform: scale(1.1);
+    }
 
     h3 {
       color: variables.$text-color-secondary;
@@ -28,7 +33,7 @@
 
     p {
       color: variables.$text-color-primary;
-      font-weight: bold; 
+      font-weight: bold;
     }
 
     a {

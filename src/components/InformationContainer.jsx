@@ -9,7 +9,7 @@ const InformationContainer = () => {
         <AiFillPhone id="phone-icon" />
         <div>
           <h3>Telefone</h3>
-          <p>(11) 97096-7963</p>
+          <a href="https://api.whatsapp.com/send?phone=5511970967963">(11) 97096-7963</a>
         </div>
         </div>
         <div className="info-card">
