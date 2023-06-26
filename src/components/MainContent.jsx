@@ -1,6 +1,8 @@
+import "../css/maincontent.css";
+
 const MainContent = () => {
   return (
-    <div>MainContent</div>
+    <main id="main-content">MainContent</main>
   )
 }
 

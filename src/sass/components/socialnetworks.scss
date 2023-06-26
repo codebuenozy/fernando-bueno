@@ -1,0 +1,36 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+#social-networks {
+  @include mixins.center;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  .social-btn {
+    padding: .6rem;
+    background-color: variables.$bg-color-secondary;
+    border-radius: variables.$card-border-radius;
+    color: variables.$social-btn-color;
+    font-size: 1.3rem;
+    @include mixins.center;
+  }
+
+  #linkedin {
+    color: variables.$linkedin-color;
+  }
+
+  #github {
+    color: variables.$github-color;
+  }
+
+  #instagram {
+    color: variables.$instagram-color;
+  }
+
+  :hover {
+    background: variables.$gradient;
+    > svg {
+      color: variables.$text-color-primary;
+    }
+  }
+}

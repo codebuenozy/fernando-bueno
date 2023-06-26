@@ -6,3 +6,11 @@
     font-family: variables.$font-stack;
     box-sizing: border-box;
 }
+
+body {
+    background: variables.$body-bg-color;
+}
+
+a, svg {
+    transform: .4s;
+}

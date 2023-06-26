@@ -1,0 +1,60 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+#information {
+  @include mixins.center;
+  flex-direction: column;
+  background-color: variables.$bg-color-secondary;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 90%;
+  border-radius: variables.$card-border-radius;
+
+  .info-card {
+    @include mixins.center;
+    justify-content: start;
+    gap: 1rem;
+    padding: .8rem;
+    margin-bottom: .8rem;
+    border-bottom: 1px solid variables.$border-color;
+    width: 100%;
+
+    h3 {
+      color: variables.$text-color-secondary;
+      font-size: .8rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      color: variables.$text-color-primary;
+      font-weight: bold; 
+    }
+
+    a {
+      color: variables.$text-color-primary;
+      text-decoration: none;
+      font-weight: bold; 
+    }
+
+    svg {
+      background-color: variables.$bg-color-primary;
+      padding: .4rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: variables.$card-border-radius;
+    }
+
+    #phone-icon {
+      color: variables.$phone-icon-color;
+    }
+
+    #email-icon {
+      color: variables.$email-icon-color;
+    }
+
+    #location-icon {
+      color: variables.$location-icon-color;
+    }
+  }
+}
