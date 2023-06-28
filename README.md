@@ -2,7 +2,7 @@
 
 **Versão Desktop (Concluída)**
 
-**Versão Mobile (Em Breve)**
+**Versão Mobile (Em Teste)**
 
 ### *Projeto de página com informações pessoais, profissionais, contato e opção de **download do currículo**.*
 

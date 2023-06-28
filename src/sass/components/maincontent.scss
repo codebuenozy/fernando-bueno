@@ -43,3 +43,9 @@
     align-self: start;
   }
 }
+
+@media (max-width: variables.$layout-breakpoint-small) {
+  #main-content {
+    min-width: 347px;
+  }
+}

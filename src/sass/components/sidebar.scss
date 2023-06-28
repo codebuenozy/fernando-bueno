@@ -3,7 +3,7 @@
 
 #sidebar {
   background-color: variables.$bg-color-primary;
-  flex: 1 1 0;
+  flex: 2 1 0;
   border-radius: variables.$container-border-radius;
   display: flex;
   align-items: center;
@@ -13,21 +13,49 @@
   padding: 3rem 0;
 
   img {
-    max-width: 70%;
+    max-width: 270px;
     border-radius: variables.$container-border-radius;
-    position: absolute;
-    top: -3rem;
+    position: relative;
+    top: -1rem;
+  }
+
+  .name {
+    color: variables.$text-color-primary;
+    border-radius: variables.$card-border-radius;
+    margin-top: 1rem;
+    padding: .8rem 1.2rem;
+    background: variables.$gradient;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+    transform: scale(1.4);
+    }
   }
 
   .title {
     color: variables.$text-color-secondary;
     background-color: variables.$bg-color-secondary;
     border-radius: variables.$card-border-radius;
-    margin-top: 12rem;
+    margin-top: 1rem;
     padding: .8rem 1.2rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+    transform: scale(1.4);
+    }
   }
 
   .btn {
     @include mixins.btn;
+  }
+}
+
+@media (max-width: variables.$layout-breakpoint-small) {
+  #sidebar {
+    min-width: 347px;
+  }
+  
+  img {
+    width: 220px;
   }
 }

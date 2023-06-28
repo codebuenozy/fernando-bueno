@@ -34,12 +34,14 @@
     p {
       color: variables.$text-color-primary;
       font-weight: bold;
+      font-size: .8rem;
     }
 
     a {
       color: variables.$text-color-primary;
       text-decoration: none;
-      font-weight: bold; 
+      font-weight: bold;
+      font-size: .8rem; 
     }
 
     svg {
@@ -47,6 +49,8 @@
       padding: .4rem;
       width: 2rem;
       height: 2rem;
+      min-width: 32px;
+      min-height: 32px;
       border-radius: variables.$card-border-radius;
     }
 

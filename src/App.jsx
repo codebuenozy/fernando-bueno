@@ -7,10 +7,8 @@ function App() {
   
   return (
       <div id="portfolio">
-        <h1>Fernando Bueno</h1>
         <Sidebar />
         <MainContent />
-
       </div>
   )
 }

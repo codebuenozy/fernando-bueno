@@ -95,3 +95,13 @@
     color: variables.$mongo-color;
   }
 }
+
+@media (max-width: variables.$layout-breakpoint-medium) {
+  .technologies-grid{
+    justify-content: space-around;
+  }
+  
+  .technology-card {
+    min-width: 270px;
+  }
+}
